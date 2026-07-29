@@ -1,6 +1,41 @@
 # Liga Nexus
 
+<p align="center">
+  <img src="./assets/banner.png" alt="Liga Nexus — Comunidad de emprendimiento en 42" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/comunidad-42-000000?style=flat-square" alt="Ecosistema 42" />
+  <img src="https://img.shields.io/badge/estado-en%20construcción-yellow?style=flat-square" alt="Estado del proyecto" />
+  <img src="https://img.shields.io/badge/lanzamiento-15%20septiembre-blue?style=flat-square" alt="Fecha de lanzamiento" />
+  <img src="https://img.shields.io/github/license/TU-ORGANIZACION/liga-nexus?style=flat-square" alt="Licencia" />
+  <img src="https://img.shields.io/badge/PRs-bienvenidos-brightgreen?style=flat-square" alt="PRs bienvenidos" />
+</p>
+
 Comunidad de emprendimiento dentro del ecosistema 42.
+
+## 📑 Tabla de contenidos
+
+- [👋 Bienvenida](#-bienvenida)
+- [📜 Código de Conducta](#-código-de-conducta)
+- [Propuesta de valor](#propuesta-de-valor)
+  - [Objetivo](#objetivo)
+  - [Contexto y justificación](#contexto-y-justificación)
+  - [Qué aportamos](#qué-aportamos)
+  - [Visión de futuro](#visión-de-futuro)
+  - [Principios de la comunidad](#principios-de-la-comunidad)
+  - [Primeras líneas de actividad](#primeras-líneas-de-actividad)
+- [Introducción — Escuchar a la comunidad](#introducción--escuchar-a-la-comunidad)
+  - [Temas sugeridos a explorar](#temas-sugeridos-a-explorar)
+  - [Preguntas a incluir](#preguntas-a-incluir)
+- [Gobierno](#gobierno)
+  - [Stakeholders](#stakeholders)
+  - [Principios](#principios)
+  - [Toma de decisiones](#toma-de-decisiones)
+  - [Requisitos de participación (estatus de Builder)](#requisitos-de-participación-estatus-de-builder)
+- [🎯 Gran hito: 15 de Septiembre](#-gran-hito-15-de-septiembre)
+
+---
 
 ## 👋 Bienvenida
 
