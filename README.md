@@ -1,7 +1,7 @@
 # Liga Nexus
 
 <p align="center">
-  <img src="./assets/banner.png" alt="Liga Nexus — Comunidad de emprendimiento en 42" width="100%" />
+  <img width="1200" height="300" alt="banner" src="https://github.com/user-attachments/assets/a01ae6ff-6b94-45cb-90f3-49a57efd0af0" />
 </p>
 
 <p align="center">
