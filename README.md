@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/github/license/TU-ORGANIZACION/liga-nexus?style=flat-square" alt="Licencia" />
   <img src="https://img.shields.io/badge/PRs-bienvenidos-brightgreen?style=flat-square" alt="PRs bienvenidos" />
 </p>
+<a style="text-align: center; font-weight: bold; display: block;" href="site.com">👉Visita nuestra página y forma parte.👈</a>
 
 Comunidad de emprendimiento dentro del ecosistema 42.
 
