@@ -1,0 +1,11 @@
+@use 'variables' as *;
+@use 'header';
+@use 'base';
+@use 'hero';
+@use 'components';
+
+// Sobrescribe las variables CSS de Bootstrap con nuestra paleta SCSS
+:root {
+  --bs-primary: #{$color-primary};
+  --bs-primary-rgb: #{$color-primary-rgb};
+}
