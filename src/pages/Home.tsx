@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { FaWhatsapp, FaGithub, FaUsers, FaCode, FaBookOpen } from 'react-icons/fa'
 import MemberCard from '../components/MemberCard'
 import { siteConfig } from '../siteConfig'
+import EventsCarousel from '../components/Home/EventsCarousel'
 
 export default function Home() {
   return (
@@ -83,29 +84,84 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
+        <article className="container container-sm py-5">
+          <h1 className='h1 text-left fw-bold'>Objetivo</h1>
+
+          <p className='mw-80 mb-3'>
+            La Liga Nexus  nace para conectar talento, ideas y oportunidades, creando una comunidad práctica donde estudiantes, trabajadores y emprendedores puedan colaborar, validar ideas y convertir proyectos en realidades.
+          </p>
+        <table className='table mb-5'>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Perfil de 42</strong></td>
+                        <td>Personas con alta capacidad técnica, autonomía, curiosidad y mentalidad de aprendizaje.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Problema identificado</strong></td>
+                        <td>Muchas ideas no llegan a desarrollarse por falta de equipo, método, confianza, orientación o conexión con el ecosistema emprendedor.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Necesidades detectadas</strong></td>
+                        <td>Compartir ideas sin miedo, encontrar socios compatibles, recibir feedback, aprender a convertir ideas en proyectos, conectar con referentes y evitar avanzar en solitario.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Propósito de la Liga</strong></td>
+                        <td>Crear una comunidad con ambición de construir, aprender emprendiendo y generar impacto desde la tecnología que ayude a transformar ideas en proyectos reales.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+          <h2 className='h2 text-left fw-bold mb-3'>Qué aportamos</h2>
+          <h3>🤝 Comunidad y networking</h3>
+          <ul className='mb-3'>
+              <li>Conocer personas con intereses y objetivos comunes.</li>
+              <li>Crear conexiones entre perfiles técnicos, creativos y de negocio.</li>
+              <li>Encontrar socios y colaboradores.</li>
+              <li>Formar parte de una comunidad donde compartir dudas, inquietudes, dificultades y celebrar éxitos.</li>
+          </ul>
+
+          <h3>📚 Aprendizaje</h3>
+          <ul className='mb-3'>
+              <li>Asistir a charlas y conocer experiencias de emprendedores, alumni de 42 y startups.</li>
+              <li>Aprender a generar ideas y presentarlas.</li>
+              <li>Aprender a identificar problemas, diseñar soluciones y lanzar primeras versiones (MVP).</li>
+              <li>Desarrollar habilidades emprendedoras:
+                  <ul>
+                      <li>Visión de mercado y negocio.</li>
+                      <li>Creación de valor.</li>
+                      <li>Gestión financiera.</li>
+                      <li>Gestión de equipos.</li>
+                      <li>Gestión de proyectos.</li>
+                  </ul>
+              </li>
+          </ul>
+
+        <h3>🚀 Desarrollo de proyectos</h3>
+        <ul className='mb-3'>
+            <li>Presentar ideas y recibir feedback constructivo.</li>
+            <li>Participar en proyectos reales, hackathons, retos y dinámicas de innovación.</li>
+            <li>Experimentar formas de trabajo más ágiles que el entorno corporativo tradicional.</li>
+            <li>Construir un portfolio mediante iniciativas tangibles.</li>
+            <li>Crear proyectos extraordinarios junto a equipos multidisciplinares.</li>
+        </ul>
+        
+        </article>
       </section>
 
       {/* PREVIEW QUIENES SOMOS */}
       <section className="py-5 bg-light">
         <Container>
-          <h2 className="section-title text-center">Quiénes somos</h2>
+          <h2 className="section-title text-center">Próximos eventos</h2>
           <p className="text-center text-muted mb-5">
-            Un vistazo rápido a las personas detrás de la comunidad.
+            Un vistazo rápido a los eventos más importantes por venir.
           </p>
-          <Row className="g-4 justify-content-center">
-            <Col xs={6} md={3}>
-              <MemberCard nombre="Nombre 1" rol="Estudiante" />
-            </Col>
-            <Col xs={6} md={3}>
-              <MemberCard nombre="Nombre 2" rol="Estudiante" />
-            </Col>
-            <Col xs={6} md={3}>
-              <MemberCard nombre="Nombre 3" rol="Estudiante" />
-            </Col>
-            <Col xs={6} md={3}>
-              <MemberCard nombre="Nombre 4" rol="Estudiante" />
-            </Col>
-          </Row>
+          <EventsCarousel></EventsCarousel>
           <div className="text-center mt-4">
             <Link to="/about" className="btn btn-outline-primary">
               Conócenos mejor
@@ -119,8 +175,7 @@ export default function Home() {
         <Container className="text-center">
           <h2 className="section-title">¿Te unes tú también?</h2>
           <p className="text-muted mb-4">
-            Pide acceso al repositorio (privado por temas burocráticos y legales) o entra
-            directamente al grupo de WhatsApp.
+            A medio plazo, la Liga aspira a convertirse en una plataforma estable de innovación, capaz de organizar eventos, acompañar proyectos, atraer referentes del ecosistema y generar una cultura emprendedora reconocible.
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <Button

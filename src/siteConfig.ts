@@ -2,7 +2,7 @@
 // Cambia aquí los enlaces y textos que se repiten en toda la web.
 
 export const siteConfig = {
-  nombreComunidad: 'Nuestra Comunidad',
+  nombreComunidad: 'Liga Nexus',
 
   // Enlace provisional de WhatsApp (grupo o chat de invitación)
   whatsappUrl: 'https://chat.whatsapp.com/TU-ENLACE-AQUI',

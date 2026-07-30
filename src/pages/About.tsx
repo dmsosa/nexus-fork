@@ -1,8 +1,6 @@
-import { Container, Row, Col, Button } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 import { FaWhatsapp } from 'react-icons/fa'
-import MemberCard from '../components/MemberCard'
 import { siteConfig } from '../siteConfig'
-import { members } from '../data/members'
 
 
 export default function About() {
@@ -10,21 +8,93 @@ export default function About() {
     <>
       <section className="py-5">
         <Container>
-          <div className="text-center mb-5">
-            <h1 className="fw-bold">Quiénes somos</h1>
-            <p className="text-muted mx-auto" style={{ maxWidth: 640 }}>
-              Somos un grupo de estudiantes que decidimos unir esfuerzos para aprender más rápido,
-              compartir dudas y construir proyectos juntos. Esto es lo que somos, sin filtros.
-            </p>
-          </div>
+    <div className="text-center mb-5">
+        <h2>Sobre La Liga</h2>
+        <p className="lead">
+            Una comunidad para transformar ideas en proyectos reales.
+        </p>
+    </div>
 
-          <Row className="g-4">
-            {members.map((m) => (
-              <Col key={m.nombre} xs={6} md={4} lg={2}>
-                <MemberCard nombre={m.nombre} rol={m.rol} foto={m.foto || undefined} />
-              </Col>
-            ))}
-          </Row>
+    <div className="row g-5">
+
+        <div className="col-lg-6">
+            <h3>Nuestra misión</h3>
+
+            <p>
+                La Liga nace para conectar personas con inquietud emprendedora y
+                convertir el talento técnico de 42 en proyectos con impacto. Creemos
+                que las mejores ideas surgen cuando perfiles diversos colaboran,
+                experimentan y aprenden construyendo.
+            </p>
+
+            <p>
+                Nuestro objetivo es crear un entorno donde cualquier estudiante pueda
+                compartir una idea, encontrar un equipo, recibir feedback y desarrollar
+                soluciones reales desde sus primeras versiones hasta proyectos con
+                potencial de crecimiento.
+            </p>
+        </div>
+
+        <div className="col-lg-6">
+            <h3>¿Qué nos hace diferentes?</h3>
+
+            <ul>
+                <li>💡 Compartimos ideas en un entorno seguro y constructivo.</li>
+                <li>🤝 Conectamos perfiles técnicos, creativos y de negocio.</li>
+                <li>🚀 Aprendemos haciendo, no solo escuchando teoría.</li>
+                <li>🎤 Recibimos feedback para mejorar proyectos y habilidades.</li>
+                <li>🌍 Colaboramos con startups, alumni y profesionales del ecosistema.</li>
+                <li>🏆 Participamos en hackathons, retos y proyectos reales.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <hr className="my-5"></hr>
+
+    <div className="row text-center">
+
+        <div className="col-md-4 mb-4">
+            <h2>100+</h2>
+            <h5>Ideas por descubrir</h5>
+            <p>
+                Queremos que ninguna buena idea se quede sin explorar por falta de
+                equipo o apoyo.
+            </p>
+        </div>
+
+        <div className="col-md-4 mb-4">
+            <h2>∞</h2>
+            <h5>Colaboración</h5>
+            <p>
+                Fomentamos una comunidad donde compartir conocimiento, aprender de
+                otros y crecer juntos.
+            </p>
+        </div>
+
+        <div className="col-md-4 mb-4">
+            <h2>1</h2>
+            <h5>Comunidad</h5>
+            <p>
+                Personas con talento, curiosidad y ganas de construir soluciones que
+                generen un impacto real.
+            </p>
+        </div>
+
+    </div>
+
+    <div className="text-center mt-5">
+
+        <h3>Nuestra visión</h3>
+
+        <p className="mx-auto">
+            Aspiramos a que 42 sea reconocido no solo como un lugar donde se aprende
+            a programar, sino también como un espacio donde nacen startups, se forman
+            equipos extraordinarios y las ideas encuentran el apoyo necesario para
+            convertirse en proyectos que transformen el futuro.
+        </p>
+
+    </div>
         </Container>
       </section>
 
