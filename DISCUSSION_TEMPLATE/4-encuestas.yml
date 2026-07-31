@@ -1,0 +1,78 @@
+name: Encuesta · Liga de Emprendimiento
+description: Ayúdanos a dar forma a la comunidad de emprendimiento de 42.
+title: "[Diagnóstico] "
+labels: ["diagnóstico", "liga-emprendimiento"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Liga de Emprendimiento
+        Somos un grupo de estudiantes dando los primeros pasos para crear una liga
+        de emprendimiento en 42 y nos encantaría conocerte. ¿Nos regalas un minuto
+        para ayudarnos a dar forma a la comunidad?
+
+  - type: dropdown
+    id: interes
+    attributes:
+      label: ¿Te arriesgarías a emprender (crear un proyecto desde cero o una empresa)?
+      options:
+        - Nunca, no me interesa.
+        - Quizá en un futuro lejano.
+        - Sí, pero aún no lo he considerado seriamente.
+        - Sí, ya estoy trabajando en ello.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: punto-idea
+    attributes:
+      label: Si te interesa emprender, ¿en qué punto te encuentras actualmente?
+      description: ¿Tienes alguna idea de emprendimiento en mente?
+      options:
+        - No aplica / No me interesa.
+        - No tengo ninguna idea.
+        - Tengo algunas ideas, pero todavía no las he desarrollado.
+        - Ya tengo una idea definida y estoy empezando a validarla.
+        - Ya tengo un proyecto en marcha.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: frenos
+    attributes:
+      label: Si aún no tienes un proyecto en marcha, ¿qué es lo que te frena?
+      description: Marca todo lo que aplique.
+      options:
+        - label: Me faltan conocimientos.
+        - label: No sé por dónde empezar o cómo desatascarme.
+        - label: No estoy seguro de si mi idea es buena.
+        - label: No dispongo de tiempo suficiente.
+        - label: No conozco personas con las que emprender.
+        - label: No dispongo de los recursos necesarios.
+        - label: Tengo miedo a fracasar.
+        - label: No creo que ahora sea el momento adecuado.
+
+  - type: checkboxes
+    id: involucrarse
+    attributes:
+      label: ¿Cómo te gustaría involucrarte en la liga de emprendimiento?
+      description: Marca todo lo que aplique.
+      options:
+        - label: Quiero asistir a charlas y eventos.
+        - label: Quiero colaborar en la organización de actividades de la comunidad.
+        - label: Quiero unirme a un equipo para ayudar a impulsar la idea de un compañero.
+        - label: Quiero proponer ideas y que mis compañeros me ayuden a impulsarlas.
+        - label: Quiero impartir charlas, talleres y ser mentor de equipos.
+
+  - type: textarea
+    id: expectativas
+    attributes:
+      label: ¿Qué debería ofrecer la comunidad para ayudarte en tu camino emprendedor?
+      placeholder: Cuéntanos qué te sería más útil...
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por ayudarnos a construir la comunidad! 🙌
