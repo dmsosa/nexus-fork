@@ -1,6 +1,5 @@
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
-import { siteConfig } from '../siteConfig'
 import whiteLogo from '../assets/images/brand/white-logo.png'
 
 export default function Header() {
