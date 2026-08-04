@@ -1,0 +1,22 @@
+//BRAND LOGO
+.logo {
+    cursor: pointer;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: fit-content;
+    font-size: 2rem;
+    text-decoration: none;
+    gap: 0.1rem;
+    max-width: 5rem;
+    span {
+        font-size: 0.5em;
+        align-self: end;
+        font-weight: 600;
+        color: inherit;
+    }
+    img {
+        width: 2em;
+    }
+}

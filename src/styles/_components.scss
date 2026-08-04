@@ -1,0 +1,22 @@
+.member-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: $border-radius-lg;
+  background: $color-placeholder-bg;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-card {
+  border: none;
+  border-radius: $border-radius-lg;
+  transition: transform $transition-fast;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}

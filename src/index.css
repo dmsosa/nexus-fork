@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  /*
+    HERO BACKGROUND: coloca tu imagen en /src/assets/images/hero.jpg
+    y descomenta la línea de background-image de abajo.
+  */
+  background-color: #1e1b4b;
+  /* background-image: url('/src/assets/images/hero.jpg'); */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0.75) 0%, rgba(17, 24, 39, 0.85) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.member-photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 1rem;
+  background: #e5e7eb;
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.join-card {
+  border: none;
+  border-radius: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.join-card:hover {
+  transform: translateY(-4px);
+}

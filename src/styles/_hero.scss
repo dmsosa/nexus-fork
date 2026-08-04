@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  /*
+    HERO BACKGROUND: coloca tu imagen en /src/assets/images/hero.jpg
+    y descomenta la línea de background-image de abajo.
+  */
+  background-color: $color-hero-bg;
+  // background-image: url('/src/assets/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, $color-hero-overlay-start 0%, $color-hero-overlay-end 100%);
+  }
+
+  &-content {
+    position: relative;
+    z-index: 1;
+  }
+}
